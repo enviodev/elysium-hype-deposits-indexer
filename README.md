@@ -25,7 +25,7 @@ A separate HyperSync script that decoded every `MessageDelivered` log itself fou
 
 ## Why it matters
 
-A rollup's deposits are recorded on the chain it settles to. Elysium isn't on HyperSync yet, but HyperEVM is, so you can follow onboarding into Elysium from day one by indexing one contract on HyperEVM. You don't need the L2 itself.
+A rollup's deposits are recorded on the chain it settles to. Elysium is on HyperSync too, but its deposits are recorded on HyperEVM, so you can follow onboarding into Elysium from day one by indexing one contract on HyperEVM. You don't need the L2 itself.
 
 Elysium is built on the Arbitrum Nitro stack, so the Bridge emits Nitro's `MessageDelivered` event with a `kind` field. Kind 12 is a native deposit, which on Elysium is HYPE. The same approach works for any Nitro-based rollup, as long as its parent chain is indexable.
 
